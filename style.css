@@ -1,0 +1,178 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--Violet);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover ;
+    background-size: contain;
+    height: 100vh;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+/* main container style */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    text-align: center;
+}
+
+/* nav style */
+
+.main-nav{
+    text-align: start;
+    margin-bottom: 1.6rem;
+}
+
+.img-nav{
+    max-width: 10rem;
+    width: 100%;
+}
+
+/* elements containers style */
+.img-container{
+    margin-top: 1.6rem;
+}
+
+.img-main{
+    max-width: 100%;
+}
+
+.information-container{
+    margin-top: 50px;
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.information-text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.060rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+}
+
+button{
+    max-width: 12.5rem;
+    width: 100%;
+    height: 2.375rem;
+    font-family:  "Open Sans", sans-serif;
+    color: var(--Violet);
+    border-radius: 30px;
+    border: none;
+    margin-top: 30px;
+}
+
+button:hover{
+    background: var(--Soft-Magenta);
+    color: white;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1.6rem;
+}
+
+.icons{
+    width: 1.4rem;
+}
+
+.icons:hover{
+    background: var(--Soft-Magenta);
+    border-radius: 100%;
+}
+
+.attribution{
+    margin-top: 1.6rem;
+}
+
+
+@media (width > 1024px){
+    body{
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+        min-height: 100vh;
+        padding-top: 3rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .elements-container{
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .information-container{
+        flex: 1;
+        text-align: start;
+    }
+
+    h1{
+        font-size: 2.7rem;
+    }
+
+    .information-text{
+        font-size: 1.2rem;
+        margin-right: 2rem;
+        line-height: 1.6rem;
+        
+    }
+    
+    button{
+        height: 3rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.6rem;
+        
+    }
+
+    .social-links{
+        margin-top: 0;
+    }
+
+    .icons{
+        width: 1.8rem;
+    }
+
+    .attribution{
+        margin-top: 0;
+        font-size: 1rem;
+    }
+}
+/* footer style */
+
+
+/*
+
+font-family: "Open Sans", sans-serif;
+*/
